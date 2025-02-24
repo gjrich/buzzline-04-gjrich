@@ -23,6 +23,7 @@ Otherwise, proceed with the full instructions.
 
 ## Step 0. Clone down repository & Install Python 3.11
 Run this in the target repository. Git must be installed.
+
 ```git clone https://github.com/gjrich/buzzline-04-gjrich/```
 
 Download Python 3.11
