@@ -11,7 +11,9 @@ project_consumer_gjrich.py then reads as messages are posted and generates a liv
 Make sure to run the consumer before the producer for a clean session each time! This ensures the consumer does not miss any messages posted by the producer, and the consumer is designed to purge the contents of buzz_letters.json so your letter distribution reflects only those messages that have been posted since you started the consumer/producer.
 
 If you have previously set up python 3.11 / kafka / zookeeper and set up and activated the virtual environment, you can simply run the script from two venv terminals
-
+e.g. windows
+py -m consumers.project_consumer_gjrich
+py -m producers.project_producer_gjrich
 
 
 
