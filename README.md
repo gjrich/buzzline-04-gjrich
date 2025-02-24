@@ -35,14 +35,15 @@ git clone https://github.com/gjrich/buzzline-04-gjrich/
 ```
 
 
-Download Python 3.11
+Download Python 3.11 for your OS:
 
 https://www.python.org/downloads/release/python-3119/
+
 
 ## Step 1. Manage Local Project Virtual Environment (Windows included
 
 ### Windows Instructions:
-Create Virtual Environment (from project directory)
+Create Virtual Environment (in project directory)
 
 ```shell
 py -3.11 -m venv .venv
@@ -56,7 +57,7 @@ py -m pip install --upgrade -r requirements.txt
 ```
 
 ### Mac/Linux:
-
+Create Virtual Environment (in project directory)
 ```zsh
 python3 -3.11 -m venv .venv
 ```
