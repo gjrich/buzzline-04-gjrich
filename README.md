@@ -43,17 +43,21 @@ Activate / Install packages
 ```
 .venv\Scripts\activate
 py -m pip install --upgrade pip setuptools wheel
-py -m pip install --upgrade -r requirements.txt```
+py -m pip install --upgrade -r requirements.txt
 ```
 
 ## Mac/Linux:
 
-```python3 -3.11 -m venv .venv```
+```
+python3 -3.11 -m venv .venv
+```
 
 Activate / Install packages
-```source .venv/bin/activate
+```
+source .venv/bin/activate
 python3 -m pip install --upgrade pip setuptools wheel
-python3 -m pip install --upgrade -r requirements.txt```
+python3 -m pip install --upgrade -r requirements.txt
+```
 
 ## Step 2. Start Zookeeper and Kafka (2 Terminals)
 
