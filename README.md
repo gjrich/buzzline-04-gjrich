@@ -12,43 +12,42 @@ Make sure to run the consumer before the producer for a clean session each time!
 
 If you have previously set up python 3.11 / kafka / zookeeper and set up and activated the virtual environment, you can simply run the script from two venv terminals
 e.g. windows
-py -m consumers.project_consumer_gjrich
-py -m producers.project_producer_gjrich
+```py -m consumers.project_consumer_gjrich```
+
+```py -m producers.project_producer_gjrich```
 
 
 
-Otherwise, proceed with the full instructions:
-
-_____________________________________________________
-
+Otherwise, proceed with the full instructions.
 
 
 ## Step 0. Clone down repository & Install Python 3.11
-git clone https://github.com/gjrich/buzzline-04-gjrich/
+Run this in the target repository. Git must be installed.
+```git clone https://github.com/gjrich/buzzline-04-gjrich/```
 
-Download Python
+Download Python 3.11
 https://www.python.org/downloads/release/python-3119/
 
 ## Step 1. Manage Local Project Virtual Environment (Windows included
 
 ## Windows Instructions:
 Create Virtual Environment (from project directory)
-py -3.11 -m venv .venv
+```py -3.11 -m venv .venv```
 
 Activate / Install packages
-.venv\Scripts\activate
+```.venv\Scripts\activate
 py -m pip install --upgrade pip setuptools wheel
-py -m pip install --upgrade -r requirements.txt
+py -m pip install --upgrade -r requirements.txt```
 
 
 ## Mac/Linux:
 
-python3 -3.11 -m venv .venv
+```python3 -3.11 -m venv .venv```
 
 Activate / Install packages
-source .venv/bin/activate
+```source .venv/bin/activate
 python3 -m pip install --upgrade pip setuptools wheel
-python3 -m pip install --upgrade -r requirements.txt
+python3 -m pip install --upgrade -r requirements.txt```
 
 ## Step 2. Start Zookeeper and Kafka (2 Terminals)
 
@@ -69,7 +68,7 @@ This will take two terminals:
 
 ### Consumer Terminal
 
-Start the associated consumer that will process and visualize the messages. 
+First start the associated consumer that will process and visualize the messages. 
 
 In VS Code, open a NEW terminal in your root project folder. 
 Use the commands below to activate .venv, and start the consumer. 
