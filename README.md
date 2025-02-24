@@ -36,6 +36,7 @@ git clone https://github.com/gjrich/buzzline-04-gjrich/
 
 
 Download Python 3.11
+
 https://www.python.org/downloads/release/python-3119/
 
 ## Step 1. Manage Local Project Virtual Environment (Windows included
