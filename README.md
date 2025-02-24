@@ -70,6 +70,7 @@ This will take two terminals:
 1. One to run the producer which writes to a file in the data folder. 
 2. Another to run the consumer which reads from the dynamically updated file. 
 
+
 ### Consumer Terminal
 
 First start the associated consumer that will process and visualize the messages. 
