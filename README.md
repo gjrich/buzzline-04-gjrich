@@ -40,10 +40,11 @@ Create Virtual Environment (from project directory)
 ```py -3.11 -m venv .venv```
 
 Activate / Install packages
-```.venv\Scripts\activate
+```
+.venv\Scripts\activate
 py -m pip install --upgrade pip setuptools wheel
 py -m pip install --upgrade -r requirements.txt```
-
+```
 
 ## Mac/Linux:
 
