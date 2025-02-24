@@ -2,7 +2,7 @@
 
 We can analyze and visualize different types of streaming data as the information arrives.
 
-The primary scripts are project_producer_gjrich.py and project_consumer_gjrich.py. Leftover files remain from the main repository to leave the option for future editing. 
+The primary scripts are project_producer_gjrich.py and project_consumer_gjrich.py. 
 
 project_producer_gjrich.py generates buzz messages of a medieval theme and writes them with authors to buzz_live.json. It then converts all letters to lower case and removes any non-letter characters, counts the number of time each letter appears in the message, and writes the letter distribution to buzz_letters.json.
 
