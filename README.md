@@ -10,9 +10,13 @@ project_consumer_gjrich.py then reads as messages are posted and generates a liv
 
 Make sure to run the consumer before the producer for a clean session each time! This ensures the consumer does not miss any messages posted by the producer, and the consumer is designed to purge the contents of buzz_letters.json so your letter distribution reflects only those messages that have been posted since you started the consumer/producer.
 
-Prereq: Zookeeper and Kafka must be installed, configured, and active. See further down in the referential instructions if necessary.
+Prereqs: 
+- virtual environment set up with packages installed
+- zookeeper installed and running
+- kafka installed and running
+See the references further down in the readme for more information.
 
-This will take two terminals:
+Running it from VSCode will take two terminals:
 
 1.  One to run the consumer which reads from the dynamically updated file.
 2.  Another to run the producer which writes to a file in the data folder. 
