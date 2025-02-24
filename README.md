@@ -36,6 +36,7 @@ https://www.python.org/downloads/release/python-3119/
 
 ## Windows Instructions:
 Create Virtual Environment (from project directory)
+
 ```py -3.11 -m venv .venv```
 
 Activate / Install packages
