@@ -40,7 +40,7 @@ https://www.python.org/downloads/release/python-3119/
 
 ## Step 1. Manage Local Project Virtual Environment (Windows included
 
-## Windows Instructions:
+### Windows Instructions:
 Create Virtual Environment (from project directory)
 
 ```shell
@@ -54,7 +54,7 @@ py -m pip install --upgrade pip setuptools wheel
 py -m pip install --upgrade -r requirements.txt
 ```
 
-## Mac/Linux:
+### Mac/Linux:
 
 ```zsh
 python3 -3.11 -m venv .venv
