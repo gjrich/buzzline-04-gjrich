@@ -12,6 +12,8 @@ Make sure to run the consumer before the producer for a clean session each time!
 
 If you have previously set up python 3.11 / kafka / zookeeper and set up and activated the virtual environment, you can simply run the script from two venv terminals
 e.g. windows
+
+
 ```py -m consumers.project_consumer_gjrich```
 
 ```py -m producers.project_producer_gjrich```
@@ -25,6 +27,7 @@ Otherwise, proceed with the full instructions.
 Run this in the target repository. Git must be installed.
 
 ```git clone https://github.com/gjrich/buzzline-04-gjrich/```
+
 
 Download Python 3.11
 https://www.python.org/downloads/release/python-3119/
