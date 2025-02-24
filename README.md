@@ -79,13 +79,14 @@ See instructions at [SETUP-KAFKA.md] to:
 
 ---
 
-## Step 3. Start a Basic (File-based, not Kafka) Streaming Application
+## Step 3. Start the Streaming Application
 
-This will take two terminals:
+This will take two additional terminals:
 
 1. One to run the producer which writes to a file in the data folder. 
 2. Another to run the consumer which reads from the dynamically updated file. 
 
+For this example, we start with the consumer as it purges the JSON file and by starting it, we ensure we miss none of th emessages written by the producer.
 
 ### Consumer Terminal
 
@@ -126,6 +127,12 @@ Mac/Linux:
 source .venv/bin/activate
 python3 -m producers.project_producer_gjrich
 ```
+
+
+## Troubleshooting
+It's possible that your Environment will install Kafka/zookeeper differently than mine. 
+If you run into errors with Kafka/zookeeper, you can check the IP your environment is set to run them on in ~/kafka/config/server.properties and ~/kafka/config/zookeeper.properties
+Contrast the these with what is configured in this repository by searching the relevant files for 2181 and 9092, the ports which kafka and zookeeper run on.
 
 ## Save Space
 To save disk space, you can delete the .venv folder when not actively working on this project.
