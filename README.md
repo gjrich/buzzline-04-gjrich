@@ -11,12 +11,16 @@ project_consumer_gjrich.py then reads as messages are posted and generates a liv
 Make sure to run the consumer before the producer for a clean session each time! This ensures the consumer does not miss any messages posted by the producer, and the consumer is designed to purge the contents of buzz_letters.json so your letter distribution reflects only those messages that have been posted since you started the consumer/producer.
 
 If you have previously set up python 3.11 / kafka / zookeeper and set up and activated the virtual environment, you can simply run the script from two venv terminals
-e.g. windows
+e.g. for windows
 
 
-```py -m consumers.project_consumer_gjrich```
+```shell
+py -m consumers.project_consumer_gjrich
+```
 
-```py -m producers.project_producer_gjrich```
+```shell
+py -m producers.project_producer_gjrich
+```
 
 
 
@@ -24,9 +28,11 @@ Otherwise, proceed with the full instructions.
 
 
 ## Step 0. Clone down repository & Install Python 3.11
-Run this in the target repository. Git must be installed.
+Run this in the target repository (from powershell if windows). Git must be installed.
 
-```git clone https://github.com/gjrich/buzzline-04-gjrich/```
+```shell
+git clone https://github.com/gjrich/buzzline-04-gjrich/
+```
 
 
 Download Python 3.11
@@ -37,10 +43,12 @@ https://www.python.org/downloads/release/python-3119/
 ## Windows Instructions:
 Create Virtual Environment (from project directory)
 
-```py -3.11 -m venv .venv```
+```shell
+py -3.11 -m venv .venv
+```
 
 Activate / Install packages
-```
+```shell
 .venv\Scripts\activate
 py -m pip install --upgrade pip setuptools wheel
 py -m pip install --upgrade -r requirements.txt
@@ -48,12 +56,12 @@ py -m pip install --upgrade -r requirements.txt
 
 ## Mac/Linux:
 
-```
+```zsh
 python3 -3.11 -m venv .venv
 ```
 
 Activate / Install packages
-```
+```zsh
 source .venv/bin/activate
 python3 -m pip install --upgrade pip setuptools wheel
 python3 -m pip install --upgrade -r requirements.txt
